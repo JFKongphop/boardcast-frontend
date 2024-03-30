@@ -1,2 +1,7 @@
 export interface Pos { x: number; y: number };
-export const initialPos: Pos = { x: 0, y: 0 }; 
+export interface MultiPos {
+  message: 'join' | 'play'
+  playerId: number;
+  position: Pos
+  color: string;
+}
